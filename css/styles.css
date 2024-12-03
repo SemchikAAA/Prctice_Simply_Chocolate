@@ -1,0 +1,299 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* #region Header */
+.header {
+}
+.header-nav {
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.logo-style {
+  font-style: italic;
+}
+.h-nav-list {
+}
+.h-nav-item {
+}
+.h-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+}
+.h-nav-link:hover,
+.h-nav-link:focus {
+  color: #fd9222;
+}
+/* #endregion Header */
+
+/* #region Hero */
+.hero {
+  background-color: #1e1823;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-btn-buy {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background-color: #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 144px;
+  height: 45px;
+  border: none;
+}
+.hero-btn-buy:hover,
+.hero-btn-buy:focus {
+  background: #fcf1e0;
+  color: #fd9222;
+}
+.hero-btn-how {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 183px;
+  height: 45px;
+}
+.hero-btn-how:hover,
+.hero-btn-how:focus {
+  color: #fd9222;
+  border-color: #fd9222;
+}
+.hero-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+/* #endregion Hero */
+
+/* #region Benefits */
+.our-benefits {
+  background: #1e1823;
+}
+.benefits-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.benefits-dscr {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* #endregion Benefits */
+
+/* #region Ingredients */
+.ingredients {
+}
+.ingr-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title-style {
+  color: #fd9222;
+}
+.ingr-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.ingr-list {
+}
+.ingr-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.ingr-item:nth-child(odd) {
+  color: #fff;
+}
+.ingr-img {
+}
+.ingr {
+}
+/* #endregion Ingredients */
+
+/* #region How it's made? */
+.how-made {
+}
+.how-made-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.how-made-img {
+}
+.how-made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.how-made-list {
+  list-style: inside;
+}
+.how-made-item {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+}
+/* #endregion How it's made? */
+
+/* #region Chocolate is loved */
+.rev {
+}
+.rev-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.rev-list {
+}
+.rev-item {
+}
+.rev-img {
+  border-radius: 100%;
+}
+.rev-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+.rev-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.review-btn {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  background: transparent;
+}
+.review-btn:hover,
+.review-btn:focus {
+  background: #fd9222;
+  color: #fff;
+}
+/* #endregion Chocolate is loved */
+
+/* #region Footer */
+.footer {
+  background: #1e1823;
+  color: #fff;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21429;
+  letter-spacing: -0.02em;
+}
+.contact-us {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.23;
+  text-align: center;
+}
+.address {
+  font-style: normal;
+}
+.address-list {
+}
+.address-item {
+}
+.address-link {
+  font-size: 14px;
+  line-height: 1.23;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: inherit;
+}
+.footer-nav {
+}
+.f-nav-list {
+}
+.f-nav-item {
+}
+.f-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: inherit;
+}
+/* #endregion Footer */
