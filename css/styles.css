@@ -9,19 +9,47 @@ a {
   color: #111;
 }
 
+img {
+  display: block;
+}
+
 button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+.container {
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 /* #region Header */
 .header {
 }
+
 .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   text-transform: uppercase;
@@ -34,14 +62,20 @@ ol {
   font-style: italic;
 }
 .h-nav-list {
+  display: flex;
+  gap: 24px;
 }
 .h-nav-item {
 }
 .h-nav-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14286;
   letter-spacing: -0.02em;
+  display: block;
 }
 .h-nav-link:hover,
 .h-nav-link:focus {
@@ -51,19 +85,29 @@ ol {
 
 /* #region Hero */
 .hero {
+  padding-bottom: 72px;
+}
+.hero .container {
+  border-radius: 30px;
+  width: 1200px;
+  padding: 375px 72px 46px;
   background-color: #1e1823;
 }
 .hero-title {
+  width: 484px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
 }
-.hero-list {
+
+.hero-btns {
+  display: flex;
+  justify-content: space-between;
 }
-.hero-item {
-}
+
 .hero-btn-buy {
   font-weight: 600;
   font-size: 14px;
@@ -74,6 +118,7 @@ ol {
   width: 144px;
   height: 45px;
   border: none;
+  margin-right: 14px;
 }
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
@@ -107,7 +152,11 @@ ol {
 
 /* #region Benefits */
 .our-benefits {
+  padding: 50px;
   background: #1e1823;
+}
+.our-benefits .container {
+  width: 1100px;
 }
 .benefits-title {
   position: absolute;
@@ -122,6 +171,8 @@ ol {
   overflow: hidden;
 }
 .benefits-list {
+  display: flex;
+  gap: 70px;
 }
 .benefits-item {
 }
@@ -139,6 +190,16 @@ ol {
 
 /* #region Ingredients */
 .ingredients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.ingr-title-cont {
+  width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 50px;
+  gap: 28px;
 }
 .ingr-title {
   font-weight: 600;
@@ -159,6 +220,8 @@ ol {
   text-align: center;
 }
 .ingr-list {
+  display: flex;
+  gap: 19px;
 }
 .ingr-item {
   font-weight: 600;
@@ -166,11 +229,27 @@ ol {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  width: calc((100% - 57px) / 4);
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 32px;
 }
-.ingr-item:nth-child(odd) {
+.ingr-item:nth-child(4n - 1) {
   color: #fff;
+  background-color: #1e1823;
+  border-color: #1e1823;
+}
+.ingr-item:nth-child(4n + 1) {
+  color: #fff;
+  background-color: #fd9222;
+}
+.ingr-item:nth-child(even) {
+  background-color: #fff;
 }
 .ingr-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 36px;
 }
 .ingr {
 }
@@ -178,6 +257,7 @@ ol {
 
 /* #region How it's made? */
 .how-made {
+  padding-bottom: 100px;
 }
 .how-made-title {
   font-weight: 600;
@@ -186,16 +266,31 @@ ol {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
+}
+.how-made-wraper {
+  display: flex;
+  gap: 20px;
+}
+.how-made-text-wraper {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
 }
 .how-made-img {
+  border-radius: 15px;
 }
 .how-made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 .how-made-list {
   list-style: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .how-made-item {
   font-size: 14px;
@@ -206,6 +301,7 @@ ol {
 
 /* #region Chocolate is loved */
 .rev {
+  padding-bottom: 100px;
 }
 .rev-title {
   font-weight: 600;
@@ -214,19 +310,30 @@ ol {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 .rev-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 .rev-item {
+  padding: 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
 }
 .rev-img {
-  border-radius: 100%;
+  margin: 0 auto 18px;
 }
 .rev-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 .rev-text {
   font-size: 14px;
@@ -236,6 +343,7 @@ ol {
   color: rgba(17, 17, 17, 0.7);
 }
 .review-btn {
+  display: block;
   font-weight: 600;
   font-size: 18px;
   border: 1px solid #fd9222;
@@ -244,6 +352,7 @@ ol {
   width: 222px;
   height: 50px;
   background: transparent;
+  margin: 0 auto;
 }
 .review-btn:hover,
 .review-btn:focus {
@@ -254,10 +363,13 @@ ol {
 
 /* #region Footer */
 .footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #1e1823;
   color: #fff;
 }
 .footer-title {
+  width: 300px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21429;
@@ -267,7 +379,7 @@ ol {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.23;
-  text-align: center;
+  margin-bottom: 14px;
 }
 .address {
   font-style: normal;
@@ -286,6 +398,8 @@ ol {
 .footer-nav {
 }
 .f-nav-list {
+  display: flex;
+  gap: 24px;
 }
 .f-nav-item {
 }
@@ -295,5 +409,14 @@ ol {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: inherit;
+}
+.footer-top-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bottom-block {
+  padding-top: 24px;
 }
 /* #endregion Footer */
